@@ -1,5 +1,8 @@
 «Продуктовый помощник»: сайт, на котором пользователи публикуют рецепты, добавляют чужие рецепты в избранное и подписываются на публикации других авторов. Сервис «Список покупок» позволяет пользователям создавать список продуктов, которые нужно купить для приготовления выбранных блюд. 
 
+admin@admin.ru
+admin
+
 Клонируйте репозиторий:
 
 git clone git@github.com:zotov001/foodgram-project-react.git
@@ -16,7 +19,7 @@ docker-compose exec backend python manage.py migrate
 
 Создайте суперпользователя:
 
-winpty docker-compose exec backend python manage.py createsuperuser
+docker-compose exec backend python manage.py createsuperuser
 
 Соберите статику:
 
