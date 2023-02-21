@@ -20,7 +20,6 @@ from .serializers import (IngredientSerializer, RecipeReadSerializer,
                           TagSerializer)
 
 
-
 class IngredientViewSet(ReadOnlyModelViewSet):
     queryset = Ingredient.objects.all()
     serializer_class = IngredientSerializer
