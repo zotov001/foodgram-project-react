@@ -1,7 +1,16 @@
 «Продуктовый помощник»: сайт, на котором пользователи публикуют рецепты, добавляют чужие рецепты в избранное и подписываются на публикации других авторов. Сервис «Список покупок» позволяет пользователям создавать список продуктов, которые нужно купить для приготовления выбранных блюд. 
 
-admin@admin.ru
-admin
+Проект доступен по адресу: foodgram.serveirc.com
+
+login: admin@admin.ru
+pass: admin
+
+Технологии:
+
+Python, Django, Django Rest Framework, Docker, Gunicorn, NGINX, PostgreSQL, Yandex Cloud, Continuous Integration, Continuous Deployment
+
+
+Для развертывания проекта:
 
 Клонируйте репозиторий:
 
@@ -33,10 +42,5 @@ docker-compose exec backend python manage.py load_ingredients
 
 docker-compose down
 
-После запуска:
-
-Проект доступен по адресу: http://localhost/
-
-Документация доступна по адресу: http://localhost/api/docs/
 
 Автор сборки Марк zotov001@yandex.ru
