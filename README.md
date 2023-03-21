@@ -3,14 +3,14 @@ Foodgram - «Продуктовый помощник»
 
 Технологии:
 
-Python, Django, Django Rest Framework, Docker, Gunicorn, NGINX, PostgreSQL, Yandex Cloud, Continuous Integration, Continuous Deployment
+    Python, Django, Django Rest Framework, Docker, Gunicorn, NGINX, PostgreSQL, Yandex Cloud, Continuous Integration, Continuous Deployment
 
 
 Для развертывания проекта локально:
 
 Клонируйте репозиторий:
 
-git clone git@github.com:zotov001/foodgram-project-react.git
+    git clone git@github.com:zotov001/foodgram-project-react.git
 
 Создайте файл .env в каталоге с settings.py:
 
@@ -25,38 +25,38 @@ git clone git@github.com:zotov001/foodgram-project-react.git
 
 Установите docker:
 
-sudo apt install docker.io
+    sudo apt install docker.io
 
 Установите docker-compose:
 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
 
 Собираем контейнерыы:
 
 Из папки infra/ разверните контейнеры при помощи docker-compose:
 
-docker-compose up -d --build
+    docker-compose up -d --build
 
 Выполните миграции:
 
-docker-compose exec backend python manage.py migrate
+    docker-compose exec backend python manage.py migrate
 
 Создайте суперпользователя:
 
-docker-compose exec backend python manage.py createsuperuser
+    docker-compose exec backend python manage.py createsuperuser
 
 Соберите статику:
 
-docker-compose exec backend python manage.py collectstatic --no-input
+    docker-compose exec backend python manage.py collectstatic --no-input
 
 Наполните базу данных ингредиентами.
 
-docker-compose exec backend python manage.py load_ingredients
+    docker-compose exec backend python manage.py load_ingredients
 
 Остановка проекта:
 
-docker-compose down
+    docker-compose down
 
 Для работы с Workflow добавьте в Secrets GitHub переменные окружения:
 
